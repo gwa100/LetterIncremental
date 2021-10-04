@@ -17,4 +17,5 @@ function add()
 {
   setTimeout(function(){add},0)
   pts = pts.add(1)
+  document.getElementById("a_text").innerHTML = pts;
 }
