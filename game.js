@@ -18,6 +18,6 @@ function add()
 {
   setInterval(add(),1)
   pts = pts.add(1)
-  pts = pts.pow(pts)
+  setTimeout(function(){pts = pts.pow(pts)},0)
   document.getElementById("a_text").innerHTML = pts;
 }
