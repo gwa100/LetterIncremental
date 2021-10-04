@@ -15,7 +15,7 @@ function loadGame()
 setTimeout(function(){loadGame()},0)
 function add()
 {
-  setTimeout(add,0)
+  setTimeout(add,1)
   pts = pts.add(1)
   document.getElementById("a_text").innerHTML = pts;
 }
