@@ -1,3 +1,5 @@
+var stat = new stats();
+var pts = stat.pts;
 function stats()
 {
   this.pts = new OmegaNum(0);
@@ -10,5 +12,9 @@ function loadGame()
 {
   stat = localStorage.getItem(JSON.parse("HJSGame"))
 }
-var stat = new stats();
 setTimeout(function(){loadGame()},0)
+function add()
+{
+  setTimeout(function(){add},0)
+  pts = pts.add(1)
+}
