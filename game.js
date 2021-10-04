@@ -6,6 +6,7 @@ function stats()
 }
 function saveUser(Stats)
 {
+  setInterval(saveUser(stat),5000)
   localStorage.setItem("HJSGame",JSON.stringify(Stats))
 }
 function loadGame()
@@ -15,7 +16,8 @@ function loadGame()
 setTimeout(function(){loadGame()},0)
 function add()
 {
-  setTimeout(add,1)
+  setInterval(add(),1)
   pts = pts.add(1)
+  pts = pts.pow(pts)
   document.getElementById("a_text").innerHTML = pts;
 }
