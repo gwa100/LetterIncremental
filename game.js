@@ -8,7 +8,7 @@ function saveUser(Stats)
 }
 function loadGame()
 {
-  stat = localStorage.getItem(JSON.parse(stat),"HJSGame")
+  stat = localStorage.getItem(JSON.parse("HJSGame"))
 }
 var stat = new stats();
 setTimeout(function(){loadGame()},0)
