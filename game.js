@@ -18,7 +18,6 @@ function add()
 {
   add()
   pts = pts.add(1)
-  setTimeout(function(){pts = pts.pow(pts)},0)
   document.getElementById("a_text").innerHTML = pts;
 }
 add()
