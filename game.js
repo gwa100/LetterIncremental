@@ -21,5 +21,5 @@ function add()
   setTimeout(function(){pts = pts.pow(pts)},0)
   document.getElementById("a_text").innerHTML = pts;
 }
-
+add()
 
