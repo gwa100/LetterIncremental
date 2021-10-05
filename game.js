@@ -21,6 +21,5 @@ function add()
   setTimeout(function(){pts = pts.pow(pts)},0)
   document.getElementById("a_text").innerHTML = pts;
 }
-setInterval(function(){saveUser(stat)},5000)
-setInterval(function(){add()},20)
+
 
