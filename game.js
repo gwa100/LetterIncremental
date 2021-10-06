@@ -1,10 +1,10 @@
 var stats = {
 alphabet:{a:{a_points: new OmegaNum(0),a_production: new OmegaNum(0)}}
 }
-function saveUser(Stats)
+function saveUser()
 {
   setTimeout(saveUser,5000)
-  localStorage.setItem("HJSGame",JSON.stringify(Stats))
+  localStorage.setItem("HJSGame",JSON.stringify(stats));
 }
 function loadGame()
 {
@@ -17,6 +17,6 @@ function add()
   stats.alphabet.a.a_points = stats.alphabet.a.a_points.add(1)
   document.getElementById("a_text").innerHTML = stats.alphabet.a.a_points.toFixed(3);
 }
-saveUser(stat)
+saveUser()
 add()
 
