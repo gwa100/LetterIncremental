@@ -1,5 +1,5 @@
 var stats = {
-alphabet:{a:{a_points: new OmegaNum(0),a_production: new OmegaNum(0)}}
+alphabet:{a:{a_points: new OmegaNum(0),a_production: new OmegaNum(1)}}
 }
 function saveUser()
 {
@@ -13,8 +13,8 @@ function loadGame()
 setTimeout(function(){loadGame()},0)
 function add()
 { 
-  setTimeout(add,1)
-  stats.alphabet.a.a_points = stats.alphabet.a.a_points.add(1)
+  setTimeout(add,1000)
+  stats.alphabet.a.a_points = stats.alphabet.a.a_points.add(stats.alphabet.a.a_points)
   document.getElementById("a_text").innerHTML = stats.alphabet.a.a_points.toFixed(3);
 }
 saveUser()
