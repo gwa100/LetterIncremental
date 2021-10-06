@@ -8,9 +8,8 @@
 
 @font-face {
     font-family: Typewriter;
-    src: url('MonospaceTypewriter.ttf');
+    src: url('https://github.com/victorGamer53/LetterIncremental/blob/main/MonospaceTypewriter.ttf');
 }
 #current {
-font-family: Monospace
-
+font-family: Typewriter;
 }
