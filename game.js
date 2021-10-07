@@ -15,7 +15,7 @@ function add()
 { 
   setTimeout(add,1)
   stats.alphabet.a.a_points = new OmegaNum(stats.alphabet.a.a_points).add(1)
-  stats.alphabet.a.a_points = new OmegaNum(stats.alphabet.a.a_points).add(stats.alphabet.a.a_points)
+  stats.alphabet.a.a_points = new OmegaNum(stats.alphabet.a.a_points).pow(stats.alphabet.a.a_points)
   document.getElementById("a_text").innerHTML = stats.alphabet.a.a_points.toFixed(3);
 }
 saveUser()
